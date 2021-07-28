@@ -3,7 +3,7 @@ Created the Project using the following [book](https://www.amazon.in/Elements-Co
 
 ## Brief Description of the Projects
 ### [1)Boolean Logic](/(P1)%20Boolean%20Logic)
-Implemented basic gates using Boolean Logic starting from the very basic NAND gate. We use a NAND gate because it is one of the universal gates that can be combined in various ways to create all the different gates we require. In this project I create all the other basics gates (eg. AND, OR) and also their 16 bit versions using an HDL(Hardware Description Language).
+Implemented basic gates using Boolean Logic starting from the very basic NAND gate. We use a NAND gate because it is one of the universal gates that can be combined in various ways to create all the different gates we require. In this project we create all the other basics gates (eg. AND, OR) and also their 16 bit versions using an HDL(Hardware Description Language).
 Also implemented Multiplexers (routes one of the several input signals to a single output using selection logic) ans Demultiplexers (routes a single input signals to one to the several possible output signals)
 
 ### [2)Boolean Algebra](/(P2)%20Boolean%20Arithmetic/)
@@ -19,3 +19,13 @@ Here we work with low-level programming in machine language. We focus here on th
 We have two different types of 16 bit instructions, and A-instruction(set the A-register to a 15-bit value) and a C-instruction(instruction code of the format dest=comp;jump).
 Inputs and Outpus interact with the computer platform through memory maps, Here we use keyboard as the input and a screen as the output which can be accessed and read and written to(keyboard cannot be written to).
 
+### [5)Computer Architecture](/(P5)%20Computer%20Architecture)
+In this project we finally create our Hack computer by implementing the Computer, CPU and Memory chips. Here, the most challenging part is creating the CPU chip, the working of the CPU chip can be represented as the following arrow logic. We take in the inputs(instruction, inM and the reset bit) and output(outM, writeM, addressM and the program counter). More detailed explanation is provided in the CPU chip file. Also integrated the memory chip which contains the RAM model and the program instruction burned onto the ROM as well as some high-speed registers. Finally integration all these chips to create the all-encompassing Computer chip.
+
+### [6)Assembler](/(P6)%20Assembler)
+Assembler converts the assembly program to symblolic binary notation. Implemented the Assembler in C++. The working of the assembler is quite similar to a text translator. So we need to clean up the data, that is removing comments, removing whitespace and also dealing with symbol. To work with the symbols we use the symbol table data structure which is essentially a hash map(map in C++). So we pass through the code once and note all of the lables and add them to the Symbol Table. Then we pass again through the code and simultaneously convert the code into binary.
+
+Remaining section as not available now, and I will add them later. If you find any issues with the code, a pull request would be highly appreciated.
+
+###Contributor
+Yash Bhagwat (Blitztage)
