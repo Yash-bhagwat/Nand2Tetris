@@ -5,6 +5,8 @@ Created the Project using the following [book](https://www.amazon.in/Elements-Co
 ### [1)Boolean Logic](/(P1)%20Boolean%20Logic)
 Implemented basic gates using Boolean Logic starting from the very basic NAND gate. We use a NAND gate because it is one of the universal gates that can be combined in various ways to create all the different gates we require. In this project we create many other basics gates (eg. AND, OR) and also their 16 bit versions using an HDL(Hardware Description Language).
 Also implemented Multiplexers (routes one of the several input signals to a single output using selection logic) ans Demultiplexers (routes a single input signals to one to the several possible output signals)
+![](images/mux.png)
+![](images/demux.png)
 
 ### [2)Boolean Algebra](/(P2)%20Boolean%20Arithmetic/)
 Implemented a Half Adder which is capable of adding two bits together to produce a sum and a carry.
@@ -21,6 +23,8 @@ Inputs and Outpus interact with the computer platform through memory maps, Here 
 
 ### [5)Computer Architecture](/(P5)%20Computer%20Architecture)
 In this project we finally create our Hack computer by implementing the Computer, CPU and Memory chips. Here, the most challenging part is creating the CPU chip, the working of the CPU chip can be represented by the following arrow logic. We take in the inputs(instruction, inM and the reset bit) and output(outM, writeM, addressM and the program counter). More detailed explanation is provided in the CPU chip file. Also integrated the memory chip which contains the RAM model and the program instruction burned onto the ROM as well as some high-speed registers. Finally integration all these chips to create the all-encompassing Computer chip.
+![](images/cpu.png)
+![](images/computer.png)
 
 ### [6)Assembler](/(P6)%20Assembler)
 Assembler converts the assembly program to symbolic binary notation. Implemented the Assembler in C++. The working of the assembler is quite similar to a text translator. We need to clean up the data, that is removing comments, removing whitespace and we also have to deal with symbols. To work with the symbols we use the symbol table data structure which is essentially a hash map(map in C++). So we pass through the code once and note all of the lables and add them to the Symbol Table. Then we pass again through the code and simultaneously convert the code into binary.
